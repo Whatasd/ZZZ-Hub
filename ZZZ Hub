@@ -1,0 +1,89 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("made by discord.gg/vCR9sezB")
+
+local serv = win:Server("ZZZ Hub", "")
+
+
+--channels
+local geode = serv:Channel("AutoSpawnBlocks bypass")
+
+
+
+--geode
+geode:Toggle(
+    "Auto SpawnLuckyBlock Yellow (op)",
+    false,
+    function(bool)
+        getgenv().AutoClicker = true
+while AutoClicker do
+    wait()
+    if bool then
+        wait()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+    else
+        getgenv().AutoClicker = false
+    end
+    end
+    end
+)
+
+
+geode:Toggle(
+    "Auto SpawnLuckyBlock Galaxy (op)",
+    false,
+    function(bool)
+        getgenv().AutoClicker1 = true
+while AutoClicker1 do
+    wait()
+    if bool then
+        wait()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+else
+        getgenv().AutoClicker1 = false
+    end
+    end
+    end
+)
+
+geode:Toggle(
+    "Auto SpawnLuckyBlock Rainbow (op)",
+    false,
+    function(bool)
+        getgenv().AutoClicker11 = true
+while AutoClicker11 do
+    wait()
+    if bool then
+        wait()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+else
+        getgenv().AutoClicker11 = false
+    end
+    end
+    end
+)
+
+geode:Toggle(
+    "Auto SpawnLuckyBlock Diamond (op)",
+    false,
+    function(bool)
+        getgenv().AutoClicker111 = true
+while AutoClicker111 do
+    wait()
+    if bool then
+        wait()
+game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
+else
+        getgenv().AutoClicker111 = false
+    end
+    end
+    end
+)
+
+
+
+
+
+
+
